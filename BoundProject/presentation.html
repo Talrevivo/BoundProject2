@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>מצגת לשיעור</title>
+    <meta name="description" content="למה צריך לקיים את השיעור" />
+    <meta name="keywords" content="למה חשובים דפי העד, דיון" />
+    <meta name="author" content="נעמה בלום וטל רביבו" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="icon" href="Images/favicon.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet' />
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body>
+    <article>
+        <header></header>
+        <div class="row">
+            <div id="col" class="col-3 col-md-3 col-xl-2">
+                <img src="images/menu.png" id="menu-img" alt="Alternate Text" />
+                <nav class="nav flex-column nav-design">
+                    <a href="index.html"><img id="logo" src="images/YadVashemLogo.svg.png" /></a>
+                    <img id="x" src="images/x.png" />
+                    <a class="navDown nav-link" href="index.html">רציונל השיעור</a>
+                    <a class="nav-link" href="TeacherGuide.html">מדריך למורה</a>
+                    <a class="nav-link active" href="presentation.html">מצגת לשיעור</a>
+                    <a class="nav-link" href="EnvironmentForStudent.html">סביבה לתלמיד</a>
+                    <a class="nav-link" href="odot.html">אודות הפרויקט</a>
+                </nav>
+            </div>
+            <div id="col2" class="col-9 col-md-9">
+                <div class="container-fluid">
+                    <h1>מערך שיעור- מסע בעקבות דפי עד</h1><hr />
+                    <div><iframe id="PresentationForClass" src="https://talrevivo.github.io/presentation/PresentationForClass/story.html"></iframe></div>
+                    <div><button class="btn" onclick="openFullscreen();">לחץ פה להגדלת המצגת</button></div>
+                    <script>
+                        var elem = document.getElementById("PresentationForClass");
+                        function openFullscreen() {
+                            if (elem.requestFullscreen) {
+                                elem.requestFullscreen();
+                            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                                elem.mozRequestFullScreen();
+                            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                                elem.webkitRequestFullscreen();
+                            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                                elem.msRequestFullscreen();
+                            }
+                        }
+                    </script>
+                    <a class="btn btn-primary" href="EnvironmentForStudent.html" role="button">הבא</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
